@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: localtunnel
+spec:
+  containers:
+    - name: localtunnel
+      image: iwxarnav/node-localtunnel:1
+      args: [ "-l", "localhost", "-s", "drew" ]
